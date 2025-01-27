@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Instrument Sans", "Inter", "sans-serif";
+  }
+
+  label {
+    @apply w-full;
+  }
+}
+
+@layer components {
+  .input {
+    @apply border-2 focus:outline-none focus:border-blue-500 p-3 rounded-lg shadow-sm shadow-slate-100 w-full transition duration-300;
+  }
+}
